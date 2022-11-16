@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: "IRANSansWeb";
+        src: url('./assets/fonts/IRANSansWeb.woff') format("woff");
+    }
+}
+
+@layer base {
+    html {
+        font-family: "IRANSansWeb"
+    }
+}
+
+@layer utilities {
+  .div-cliped {
+    -webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+  }
+  .button-cliped {
+    -webkit-clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+    clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
+  }
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #cd2122;
+  }
+  
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #fcfcfc;
+    border-radius: 12px;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color: #cd2122;
+    border-radius: 14px;
+    border: 3px solid #cd2122;
+  }
