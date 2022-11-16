@@ -1,23 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react';
 //components
 import Navbar from "./shared/Nvabar";
-//bg
 
 
 const UpSection = () => {
   return (
     <div>
         <div className="w-full h-auto bg-Baner bg-cover bg-no-repeat bg-center">
-                <div className="flex justify-end text-gray-200 py-2 w-[90%] m-auto border-b-[1px] border-gray-600">
+                <div className="flex justify-center items-center md:justify-end text-gray-200 py-2 w-[90%] m-auto border-b-[1px] border-gray-600">
                     <a 
-                        className="text-sm font-bold ml-10"
+                        className="md:text-sm md:font-bold text-xs font-bold ml-10 "
                         href='#' >
                             پورتال مشتریان
                     </a>
-                    <p className="font-medium">ارتباط با ما : 
+                    <p className="md:font-medium font-thin md:text-base text-sm">ارتباط با ما : 
                         <a
                             href="#"
-                            className="text-sm font-bold"> 61 360 360 051
+                            className="md:text-sm md:font-bold text-xs font-bold"> 61 360 360 051
                         </a>
                     </p>
             </div>

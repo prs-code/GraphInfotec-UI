@@ -10,25 +10,25 @@ const MdSection = () => {
   return (
     <div className="text-center mb-20">
         <div className="flex flex-col opacity-50">
-            <h1 className="text-3xl font-semibold">نرم افزار مدیریت فرایندهای کسب و کار گراف - BPMS</h1>
+            <h1 className="p-5 md:p-0 text-3xl font-semibold">نرم افزار مدیریت فرایندهای کسب و کار گراف - BPMS</h1>
             <h1 className="text-3xl font-semibold">...</h1>
             <p >مدیریت کامل و کارآمد بر فرآیندها در سطح سازمان</p>
         </div>
-        <div className="flex justify-center mb-20 shadow-underShadow">
+        <div className="flex flex-col md:flex-row justify-center md:mb-20 mb-10 shadow-underShadow">
             <div>
                 <div className="p-5 flex flex-col items-start">
-                    <div className="flex justify-start items-center px-10">
+                    <div className="flex justify-start items-center md:px-10 px-5 w-full">
                         <MdOutlineDesignServices className="w-12 h-12 p-3 rounded-full bg-gray-300 hover:bg-[#CD2122] hover:text-white" />
-                        <div className="flex flex-col items-start pr-8">
+                        <div className="flex flex-col items-start pr-4">
                             <p className="text-base font-bold">ابزار طراحی فرآیند</p>
                             <p className="text-sm opacity-50">مبتنی بر استاندارد BPMN</p>
                         </div>
                     </div>
                 </div>
                 <div className="p-5 flex flex-col items-start">
-                    <div className="flex justify-start items-center px-10">
+                    <div className="flex justify-start items-center md:px-10 px-5 w-full">
                         <TbFileReport className="w-12 h-12 p-3 rounded-full bg-gray-300 hover:bg-[#CD2122] hover:text-white" />
-                        <div className="flex flex-col items-start pr-8">
+                        <div className="flex flex-col items-start pr-4">
                             <p className="text-base font-bold">گزارش‌ساز پیشرفته و داشبورد</p>
                             <p className="text-sm opacity-50 w-[220px] text-start">قابلیت ساخت انواع گزارشات و قالب‌های چاپ اختصاصی و رصد آنلاین اطلاعات از طریق داشبورد مدیریتی</p>
                         </div>
@@ -37,18 +37,18 @@ const MdSection = () => {
             </div>
             <div>
                 <div className="p-5 flex flex-col items-start">
-                    <div className="flex justify-start items-center px-5">
+                    <div className="flex justify-start items-center md:px-10 px-5 w-full">
                         <GiProcessor className="w-12 h-12 p-3 rounded-full bg-gray-300 hover:bg-[#CD2122] hover:text-white" />
-                        <div className="flex flex-col items-start pr-8">
+                        <div className="flex flex-col items-start pr-4">
                             <p className="text-base font-bold">مدیریت فرآیندها</p>
                             <p className="text-sm opacity-50">امکان پیاده‌سازی و مدیریت انواع فرآیندها</p>
                         </div>
                     </div>
                 </div>
                 <div className="p-5 flex flex-col items-start">
-                    <div className="flex justify-start items-center px-5">
-                        <SiDatabricks className="w-12 h-12 p-3 rounded-full bg-gray-300 hover:bg-[#CD2122] hover:text-white" />
-                        <div className="flex flex-col items-start pr-8">
+                    <div className="flex justify-start items-center md:px-10 px-5 w-full">
+                        <SiDatabricks className="w-12 h-12 p-6 md:p-3 rounded-full bg-gray-300 hover:bg-[#CD2122] hover:text-white" />
+                        <div className="flex flex-col items-start pr-4">
                             <p className="text-base font-bold">مدیریت بانک ها و سرویس های اطلاعاتی</p>
                             <p className="text-sm opacity-50 w-[310px] text-start">امکان ارتباط مستقیم با انواع مختلف بانک‌های اطلاعاتی و ذخیره یا دریافت اطلاعات از آن‌ها</p>
                         </div>
@@ -57,18 +57,18 @@ const MdSection = () => {
             </div>
             <div>
                 <div className="p-5 flex flex-col items-start">
-                    <div className="flex justify-start items-center px-5">
+                    <div className="flex justify-start items-center md:px-10 px-5 w-full">
                         <AiOutlineForm className="w-12 h-12 p-3 rounded-full  bg-gray-300 hover:bg-[#CD2122] hover:text-white" />
-                        <div className="flex flex-col items-start pr-8">
+                        <div className="flex flex-col items-start pr-4">
                             <p className="text-base font-bold">فرم ساز پیشرفته</p>
                             <p className="text-sm opacity-50">طراحی انواع فرم های برداشت اطلاعات</p>
                         </div>
                     </div>
                 </div>
                 <div className="p-5 flex flex-col items-start">
-                    <div className="flex justify-start items-center px-5">
-                        <SiDatabricks className="w-12 h-12 p-3 rounded-full bg-gray-300 hover:bg-[#CD2122] hover:text-white" />
-                        <div className="flex flex-col items-start pr-8">
+                    <div className="flex justify-start items-center md:px-10 px-5 w-full">
+                        <SiDatabricks className="w-12 h-12 p-6 md:p-3 rounded-full  bg-gray-300 hover:bg-[#CD2122] hover:text-white" />
+                        <div className="flex flex-col items-start pr-4">
                             <p className="text-base font-bold">اپلیکیشن مدیریت کار همراه</p>
                             <p className="text-sm opacity-50 w-[310px] text-start">ارائه شده در دو بستر اندروید و IOS با قابلیت برداشت اطلاعات میدانی بصورت آنلاین و آفلاین</p>
                         </div>
