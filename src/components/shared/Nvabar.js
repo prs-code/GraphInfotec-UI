@@ -25,11 +25,10 @@ const Nvabar = () => {
     }
   }, [screenSize]);
 
-  console.log(activeMenu, screenSize);
 
   return (
     <div>
-    <div className="flex md:items-start md:justify-start justify-between w-[90%] m-auto md:py-2">
+      <div className="flex md:items-start md:justify-start justify-between w-[90%] m-auto md:py-2">
         <img 
             src={logo} 
             alt="graph-logo"
@@ -37,11 +36,11 @@ const Nvabar = () => {
             {
               activeMenu ? (
                 <FiMenu 
-                  className="text-2xl m-1"
+                  className="m-1 text-2xl"
                   onClick={() => setActiveMenu(!activeMenu)}/>
               ) : (
           <div>
-            <ul className="flex flex-col md:flex-row md:justify-between md:p-5 p-4 md:mr-5 text-start text-gray-200">
+            <ul className="flex flex-col p-4 text-gray-200 md:flex-row md:justify-between md:p-5 md:mr-5 text-start">
               <li className="ml-5 md:p-2 text-xs md:text-base rounded-md cursor-pointer duration-200 hover:bg-[#CD2122] mb-4 md:mb-0">BPMS گراف</li>
               <li className="ml-5 md:p-2 text-xs md:text-base rounded-md cursor-pointer duration-200 hover:bg-[#CD2122] mb-4 md:mb-0">محصولات</li>
               <li className="ml-5 md:p-2 text-xs md:text-base rounded-md cursor-pointer duration-200 hover:bg-[#CD2122] mb-4 md:mb-0">راهکارها</li>
