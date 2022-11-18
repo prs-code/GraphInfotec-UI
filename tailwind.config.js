@@ -6,7 +6,7 @@ module.exports = {
     './components/**/*.{html,js}',
   ],
   theme: {
-    extend: {
+        extend: {
       backgroundImage: {
         "Baner": "url('/src/assets/images/bg1.jpg')",
         "bgHamishe": "url('/src/assets/images/همیشه و همه جا.jpeg')",

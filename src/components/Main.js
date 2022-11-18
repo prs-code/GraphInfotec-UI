@@ -8,9 +8,10 @@ import Section05 from "./Section05";
 import Section06 from "./Section06";
 import Section07 from "./Section07";
 
+
 const Main = () => {
   return (
-    <>
+    <div className="overflow-hidden scroll-smooth">
       <Section01 />
       <Section02 />
       <Section03 />
@@ -18,7 +19,7 @@ const Main = () => {
       <Section05 />
       <Section06 />
       <Section07 />
-    </>
+    </div>
   )
 };
 

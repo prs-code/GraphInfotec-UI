@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Modal from 'react-modal';
 //icons
 import { MdOutlineAlternateEmail, MdOutlinePhoneInTalk } from 'react-icons/md';
 import { FaFax } from 'react-icons/fa';
@@ -7,15 +6,15 @@ import { GoLocation } from 'react-icons/go';
 //API
 import { postData } from '../services/api';
 
-const Conection = ({ title, subject, icon }) => {
-   <div>
-      <div className="flex items-center">
+const Conection = ({ title, subject, icon }) => (
+   <div className="flex items-center md:my-10 m-0">
+      <div className="flex items-center md:p-0 p-1">
          { icon }
-         <h1>{ title }</h1>
+         <h1 className="md:font-bold md:text-start text-sm md:ml-2 mr-2">{ title }</h1>
       </div>
-      <p>{ subject }</p>
+      <p className="md:text-sm text-xs font-normal text-center w-3/4">{ subject }</p>
    </div>
-};
+);
 
    const styleContainer = {
       position: "absolute", 
@@ -49,61 +48,62 @@ const ContactUs = () => {
 
   return (
    <div
-   className="relative h-screen w-screen bg-Baner bg-no-repeat bg-center bg-cover"
+   className="relative h-full md:h-screen w-screen bg-center bg-repeat md:bg-no-repeat md:bg-cover bg-contain bg-Baner"
    // isOpen={true}
    // // onRequestClose={false}
    // ariaHideApp={false}
    // appElement={document.getElementById("root")}
    >
       <div
-         style={styleContainer}
+         // style={styleContainer}
+         className="flex flex-col absolute inset-10 border-[1px] border-[rgb(204, 204, 204)] md:overflow-hidden md:justify-center rounded outline-0 p-5"
       >
-            <div className="items-center w-3/4 m-auto shadow-xl md:flex md:justify-center">
-               <div className="bg-[#535353] text-gray-200 p-5 w-1/3">
-                  <h1 className="md:text-2xl md:font-bold">راه های ارتباطی</h1>
-                  <p className="my-6 text-base font-semibold">شرکت گسترش راهکار اندیشه فردا - <span className="text-[#cd2122]">گراف</span></p>
+            <div className="items-center w-screen md:w-3/4 m-auto shadow-xl md:flex md:justify-center">
+               <div className="bg-[rgba(53,53,53,0.75)] text-gray-200 md:p-5 p-2 md:w-1/3 w-3/4 m-auto my-5 md:my-5 md:m-0">
+                  <h1 className="md:text-2xl md:font-bold w-3/4">راه های ارتباطی</h1>
+                  <p className="my-6 text-base font-semibold">شرکت گسترش راهکار اندیشه فردا - <span className="text-[#cd2122] text-xl font-semibold">گراف</span></p>
                   <Conection 
-                     title={"ایمیل"}
+                     title="ایمیل"
                      subject="info@Graphinfotec.com"
                      icon={ <MdOutlineAlternateEmail /> } />
                      
                   <Conection 
-                     title="تلفن :"
+                     title="تلفن"
                      subject="36036061-051"
                      icon={ <MdOutlinePhoneInTalk /> } /> 
                      
                   <Conection 
-                     title="دورنما :"
+                     title="دورنما"
                      subject="36011608-051"
                      icon={ <FaFax /> } />
 
                   <Conection
-                     title="آدرس :"
+                     title="آدرس"
                      subject="مشهد - فرامرز عباسی 32 - اولین معبر سمت راست - پلاک 5- طبقه همکف"
                      icon={ <GoLocation /> } />
                </div>   
-               <div className=" w-3/4 p-5 border-[1px] border-gray-300">
-                  <h1 className="pb-5 mb-5 border-b-2 border-gary-500 md:text-2xl md:font-bold">ارتباط با ما</h1>
-                  <div>
+               <div className=" w-3/4 p-5 border-[1px] border-gray-300 bg-[rgba(220,38,38,0.70)]">
+                  <h1 className="pb-5 text-start mb-14 border-b-2 border-gary-500 md:text-2xl md:font-bold text-gray-200">ارتباط با ما</h1>
+                  <div className=" mb-5">
                      <div className="flex items-start justify-evenly w-full">
                         <div className="w-1/2 p-2">
-                           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">نام</label>
+                           <label className="block mb-2 text-sm font-medium text-gray-200 dark:text-white">نام</label>
                            <input 
                               type="text"
                               value={connect.FirstName} 
                               name="FirstName" 
-                              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                              className= "inputContact" 
                               placeholder="نام" 
                               required
                               onChange={changeHandler} />
                         </div>
                         <div className="w-1/2 p-2">
-                           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">نام خانوادگی</label>
+                           <label className="block mb-2 text-sm font-medium text-gray-200 dark:text-white">نام خانوادگی</label>
                            <input 
                               type="text" 
                               value={connect.lastName}
-                              name="lastName" 
-                              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                              name="lastName"
+                              className= "inputContact" 
                               placeholder="نام خانوادگی" 
                               required
                               onChange={changeHandler} />
@@ -111,29 +111,29 @@ const ContactUs = () => {
                      </div>
                      <div className="flex items-center justify-evenly w-full">
                         <div className="w-1/2 p-2">
-                           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">ایمیل</label>
+                           <label className="block mb-2 text-sm font-medium text-gray-200 dark:text-white">ایمیل</label>
                            <input 
                               type="text" 
                               value={connect.Email}
                               name="Email" 
-                              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                              className= "inputContact" 
                               placeholder="ایمیل" 
                               required
                               onChange={changeHandler} />
                         </div>
                         <div className="w-1/2 p-2">
-                           <label className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">پیام</label>
+                           <label className="block mb-2 text-sm font-medium text-gray-200 dark:text-white">پیام</label>
                            <input 
                               type="text"
                               value={connect.Message} 
                               name="Message" 
-                              className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                              className= "inputContact" 
                               placeholder="پیام" 
                               required
                               onChange={changeHandler} />
                         </div>
                      </div>
-                        <div className="flex items-center px-3 py-2 rounded-lg bg-gray-50 dark:bg-gray-700">
+                        <div className="flex items-center md:my-5 px-3 py-2 rounded-lg bg-gray-50 dark:bg-gray-700">
                            <label className="sr-only">جزئیات بیشتر</label>
                            <button 
                               type="submit" 
@@ -145,7 +145,7 @@ const ContactUs = () => {
                            <textarea
                               name="Details" 
                               rows="1" 
-                              className="block mx-4 p-2.5 w-full text-sm text-gray-900 bg-white rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" 
+                              className= "inputContact" 
                               placeholder="جزئیات بیشتر ..."
                               onChange={changeHandler} />
                         </div>

@@ -6,7 +6,7 @@ import Navbar from "./shared/Nvabar";
 const UpSection = () => {
   return (
     <div>
-        <div className="w-full h-auto bg-center bg-no-repeat bg-cover bg-Baner">
+        <div className="w-full h-auto bg-center bg-fixed  bg-no-repeat bg-cover bg-Baner">
                 <div className="flex justify-center items-center md:justify-end text-gray-200 py-2 w-[90%] m-auto border-b-[1px] border-gray-600">
                     <a 
                         className="ml-10 text-xs font-bold md:text-sm md:font-bold "

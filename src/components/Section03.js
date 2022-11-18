@@ -42,7 +42,7 @@ const Baner02 = () => {
             type="video/mp4"
           />
         </video>
-        <div className="bg-[rgba(53,53,53,0.65)] backdrop-blur text-white md:w-1/2 md:p-24 p-5">
+        <div className="bg-[rgba(53,53,53,0.65)] text-white md:w-1/2 md:p-24 p-5">
           <h2 className="md:text-2xl font-semibold mb-12">تجمیع و تحلیل اطلاعات و رصد آنلاین جریان داده در سطح کلان</h2>
           <p className="text-sm">با بکارگیری سامانه گراف زیرساختی امن و کارآمد جهت جمع آوری ساختار یافته اطلاعات و تحلیل و بررسی آن ایجاد نمایید.</p>
         </div>

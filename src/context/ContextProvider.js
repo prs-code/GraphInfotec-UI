@@ -9,12 +9,12 @@ export const ContextProvider = ({ children }) => {
     const [screenSize, setScreenSize] = useState(undefined);
     const [response, setResponse] = useState();
 
-    useEffect(() => {
-      const fetchApi = async () => {
-        setResponse(await getData());
-      };
-      fetchApi();
-    }, []);
+    // useEffect(() => {
+    //   const fetchApi = async () => {
+    //     setResponse(await getData());
+    //   };
+    //   fetchApi();
+    // }, []);
     
     // console.log(response);
 
