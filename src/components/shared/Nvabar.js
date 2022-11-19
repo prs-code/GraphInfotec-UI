@@ -1,12 +1,13 @@
 import React,{ useEffect } from 'react';
+import { Link } from 'react-router-dom';
+
 //logo
 import logo from '../../assets/images/logo.png';
-import { FiMenu } from 'react-icons/fi';
-import { GrClose } from 'react-icons/gr';
 //context
 import { useStateContext } from '../../context/ContextProvider';
 //component
 import SlideBar from './SlideBar';
+
 
 
 const Nvabar = () => {
@@ -19,6 +20,7 @@ const Nvabar = () => {
       return () => window.removeEventListener("resize", resizeHandler);
   }, []);
 
+
   useEffect(() => {
     if (screenSize <= 768) {
       setActiveMenu(true);
@@ -27,16 +29,18 @@ const Nvabar = () => {
     }
   }, [screenSize]);
 
-  console.log(!activeMenu);
 
 
   return (
     <div>
-      <div className="flex md:items-start md:justify-start items-start justify-between w-[90%] m-auto md:py-2 overflow-hidden fixed top-10 right-0 left-0 bg-[rgba(53,53,53,0.20)]">
+
+      <div className="flex md:items-start md:justify-start items-start justify-between w-[90%] m-auto md:py-2 overflow-hidden bg-[rgba(53,53,53,0.20)]">
         <img 
             src={logo} 
             alt="graph-logo"
             className={`p-1 md:w-16 md:h-16 w-12 h-12 ${!activeMenu ? "mt-4" : "mt-2"} rounded-lg cursor-pointer`} />
+
+
             {
               !activeMenu ? (
               <div>
@@ -44,7 +48,9 @@ const Nvabar = () => {
                     <li className="ml-5 md:p-2 text-sm md:text-base rounded-md cursor-pointer duration-200 hover:bg-[#CD2122] mb-4 md:mb-0">BPMS گراف</li>
                     <li className="ml-5 md:p-2 text-sm md:text-base rounded-md cursor-pointer duration-200 hover:bg-[#CD2122] mb-4 md:mb-0">محصولات</li>
                     <li className="ml-5 md:p-2 text-sm md:text-base rounded-md cursor-pointer duration-200 hover:bg-[#CD2122] mb-4 md:mb-0">راهکارها</li>
-                    <li className="md:p-2 text-sm md:text-base rounded-md cursor-pointer duration-200 hover:bg-[#CD2122] md:mb-0">درباره گراف</li>
+                    <li className="md:p-2 text-sm md:text-base rounded-md cursor-pointer duration-200 hover:bg-[#CD2122] md:mb-0">
+                      <Link to="contact">تماس با ما</Link>
+                    </li>
                   </ul>
               </div>
               ) : ( 
@@ -53,7 +59,10 @@ const Nvabar = () => {
                 </div>
               )
             }
-    </div>
+
+
+      </div>
+
     </div>
   )
 };

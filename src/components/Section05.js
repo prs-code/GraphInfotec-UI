@@ -8,14 +8,12 @@ import { BiCertification } from 'react-icons/bi';
 import manageImg from '../assets/images/فرایندها.jpg';
 //component
 import TextBaner from './shared/TextBaner';
+//context
+import { useStateContext } from '../context/ContextProvider';
 
 
 const Section05 = () => {
-
-    const [text, setText] = useState({
-        boldText: "براحتی انواع گزارشات و داشبورد های اطلاعاتی مورد نظر خود را بسازید",
-        lightText: "شما می‌توانید اطلاعات مورد نیاز خود را از انواع بانک‌های اطلاعاتی مختلف برداشته و در قالب گزارشات و داشبوردها، در اختیار کاربران قرار دهید بطوریکه خروجی این اطلاعات با فرمت‌های مختلف در دسترس باشد",
-    });
+    const { response } = useStateContext();
 
   return (
     <>
@@ -87,11 +85,18 @@ const Section05 = () => {
         </div>
         </div>
     </div>
-    <div className="backdrop-blur bg-bgGozaresh bg-cover bg-center md:py-8 p-5 mb-10 brightness-40">
-            <TextBaner 
-                boldText={text.boldText}
-                lightText={text.lightText}/>
-        </div>
+
+    {
+        response && (
+            <div className="backdrop-blur bg-bgGozaresh bg-cover bg-center md:py-8 p-5 mb-10 brightness-40">
+                <TextBaner 
+                    boldText={response[4].BoldText}
+                    lightText={response[4].LightText}/>
+            </div>
+        )
+    }
+    
+
     </>
   )
 }

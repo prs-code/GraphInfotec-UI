@@ -24,6 +24,14 @@
     -webkit-clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
     clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%);
   }
+  .blurEffect {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+
+  }
 }
 
 @layer components {
@@ -31,8 +39,9 @@
     @apply ml-5 md:p-2 w-1/2 self-center text-xl border-b-2 border-gray-400 md:text-base md:rounded-md cursor-pointer duration-200 hover:bg-[#CD2122] mb-14 md:mb-0
   }
   .inputContact {
-    @apply outline-none bg-gray-50 border border-gray-300 text-gray-200 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
+    @apply outline-none bg-gray-50 border border-gray-300 text-gray-800 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500
   }
+  
 }
 
 

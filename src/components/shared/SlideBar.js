@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
-import { GiOpenedFoodCan } from 'react-icons/gi';
-//icons
-import { GrClose } from 'react-icons/gr';
-//context
-import { useStateContext } from '../../context/ContextProvider';
+
+
 
 const SlideBar = () => {
     const [open, setOpen ] = useState(false);
 
   return (
     <div className="flex flex-col items-end justify-center min-h-screen py-2 z-100">
+
+
           {
             open ? (
               <button
@@ -33,14 +32,17 @@ const SlideBar = () => {
               </svg>
            )}
 
+
         <div className={`top-0 left-0 w-full bg-[#535353] opacity-90 p-10 pr-20 text-white fixed h-full ease-in-out duration-700 ${open ? "translate-x-0" : "translate-x-full"}`}>
-        <ul className="flex flex-col m-auto text-center z-100 p-4 text-gray-200 md:flex-row md:justify-between md:p-5 md:mr-5">
-              <li className="liStyle">BPMS گراف</li>
-              <li className="liStyle">محصولات</li>
-              <li className="liStyle">راهکارها</li>
-              <li className="liStyle">درباره گراف</li>
-        </ul>
+          <ul className="flex flex-col m-auto text-center z-100 p-4 text-gray-200 md:flex-row md:justify-between md:p-5 md:mr-5">
+                <li className="liStyle">BPMS گراف</li>
+                <li className="liStyle">محصولات</li>
+                <li className="liStyle">راهکارها</li>
+                <li className="liStyle">درباره گراف</li>
+          </ul>
         </div>
+
+
     </div>
   )
 }

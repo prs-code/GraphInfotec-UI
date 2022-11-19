@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+
 //icons
 import { TbMapSearch } from 'react-icons/tb';
 import { TfiRulerPencil } from 'react-icons/tfi';
@@ -9,24 +10,17 @@ import { BsClipboardData } from 'react-icons/bs';
 import { MdOutlineDashboardCustomize } from 'react-icons/md';
 import { BiNetworkChart } from 'react-icons/bi';
 import { SiAppstore } from 'react-icons/si';
+//context
+import { useStateContext } from '../context/ContextProvider';
 //img
 import imageForm from '../assets/images/baner02.jpg';
-import bgImg from '../assets/images/میدانی گزارش.jpeg';
 //component
 import TextBaner from './shared/TextBaner';
 
+
+
 const Baner02 = () => {
-
-  const [text, setText] = useState({
-    boldText: "اطمینان از صحت مستندات و اطلاعات جمع آوری شده در برداشت های میدانی",
-    boldText2: "با بکارگیری اپلیکیشن مدیریت کار همراه گراف",
-    lightText: "آیا می‌خواهید بدانید، اطلاعات ثبت شده توسط چه کسی و در چه محدوده جغرافیایی و یا در چه زمانی از شبانه روز جمع‌آوری شده است",
-  });
-
-  const [text1, setText1] = useState({
-    boldText: "یکبار برای همیشه با فرم های کاغذی و دغدغه های مربوط به آن ها خداحافظی کنید",
-    lightText: "بدون نیاز به دانــش نرم افــــزاری، فرم های اطلاعاتی مورد نیاز را طراحی نموده و گردش اطلاعات فــرم ها را در سازمان کنترل نمایید",
-});
+  const { response } = useStateContext();
 
   return (
     <div>
@@ -53,13 +47,19 @@ const Baner02 = () => {
         </div>
       </div>
 
-      <div className="md:py-8 p-5 mb-10">
-        <TextBaner 
-          boldText={text1.boldText}
-          lightText={text1.lightText}/>
+      {
+        response && (
+          <div className="md:py-8 p-5 mb-10">
+            <TextBaner 
+              boldText={response[0].BoldText}
+              lightText={response[1].LightText}/>
       </div>
+        )
+      }
+
 
         <div className="md:flex md:justify-around md:items-start md:mt-20 my-20 p-3 m-auto md:w-3/4 w-full">
+
           <div className="md:w-1/2">
             <div className="text-start p-3 md:text-start md:mb-4">
               <h1 className="md:text-4xl text-xl font-extrabold md:font-semibold mb-2">فرم ساز <span className="text-[#cd2122]">پیشرفته</span></h1>
@@ -74,6 +74,7 @@ const Baner02 = () => {
                 className="mb-5 md:mb-0" />
             </div>
         </div>
+
 
           <div className="p-3 md:p-5 md:w-1/2">
             <div className="flex justify-start items-center">
@@ -153,10 +154,14 @@ const Baner02 = () => {
               </li>
             </ul>
           </div>
+
         </div>
 
+
         <h2 className="p-5 md:p-14 text-center md:text-start text-xl font-bold text-gray-600">ویژگی های کلیدی فرم ساز</h2>
+
         <div className="md:flex md:justify-around mb-20 flex flex-wrap justify-center items-center gap-4 text-[#535353] text-center">
+
           <div className="flex flex-col justify-center items-center">
               <MdOutlineAddLocationAlt className=" w-10 h-10 mb-2 text-[#cd2122]"/>
               <p className="text-xs m-5 md:m-0">فیلد تشخیص موقعیت و مسیر حرکت</p>
@@ -181,14 +186,19 @@ const Baner02 = () => {
               <SiAppstore className=" w-10 h-10 mb-2 text-[#cd2122]"/>
               <p className="text-xs m-5 md:m-0">قابلیت ارسال به نرم افزار همراه</p>
           </div>
+
         </div>
         
-        <div className="bg-bgMeidani bg-cover bg-no-repeat bg-center md:py-8 p-5 mb-10">
-          <TextBaner
-            boldText2={text.boldText2}
-            boldText={text.boldText}
-            lightText={text.lightText} />
-          </div>
+        {
+          response && (
+            <div className="bg-bgMeidani bg-cover bg-no-repeat bg-center md:py-8 p-5 mb-10">
+              <TextBaner
+                  boldText={response[1].BoldText}
+                  lightText={response[1].LightText} />
+            </div>
+          )
+        }
+
     </div>
   )
 }

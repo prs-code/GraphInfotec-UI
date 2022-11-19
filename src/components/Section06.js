@@ -6,13 +6,12 @@ import { AiOutlineBarChart } from 'react-icons/ai';
 import { RiDatabase2Fill } from 'react-icons/ri';
 //component
 import TextBaner from './shared/TextBaner';
+//context
+import { useStateContext } from '../context/ContextProvider';
 
 const Section06 = () => {
+    const { response } = useStateContext();
 
-    const [text, setText] = useState({
-        boldText: "دسترسی به انواع بانک ها و سرویس های اطلاعاتی بسازید",
-        lightText: "امکان ارتباط و استخراج داده از انواع بانک های اطلاعاتی SQL Sever, MySQL, Oracel, ...",
-    });
 
   return (
     <>
@@ -127,11 +126,17 @@ const Section06 = () => {
             </div>
         </div>
     </div>
+
+    {
+        response &&
     <div className="bg-bgBank bg-cover bg-center md:py-8 p-5 mb-10">
         <TextBaner 
-            boldText={text.boldText}
-            lightText={text.lightText}/>
+            boldText={response[5].BoldText}
+            lightText={response[5].LightText}/>
     </div>
+    }
+
+
     <div className="text-center md:w-3/5 md:m-auto">
       <div className="text-start p-3 md:text-start md:mb-4">
         <h1 className="md:text-4xl text-xl font-extrabold md:font-semibold mb-2">مدیریت <span className="text-[#cd2122]">بانک ها و سرویس های</span> اطلاعاتی</h1>

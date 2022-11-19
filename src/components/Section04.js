@@ -11,13 +11,13 @@ import { BiNetworkChart } from 'react-icons/bi';
 import { SiAppstore } from 'react-icons/si';
 //component
 import TextBaner from './shared/TextBaner';
+//context
+import { useStateContext } from '../context/ContextProvider';
+
+
 
 const Baner03 = () => {
-
-    const [text, setText] = useState({
-        boldText: "همیشه و همه جا به کارتابل شخصی خود دسترسی داشته باشید",
-        lightText: "سامانه مدیریت فرآیندهای کسب و کار گراف، ابزاری حرفه‌ای در بستر وب و موبایل به منظور افزایش کارایی و بهبود فرآیندهای کاری",
-    });
+    const { response } = useStateContext();
 
   return (
     <>
@@ -96,11 +96,17 @@ const Baner03 = () => {
                 </div>
             </div>
         </div>
-        <div className="bg-bgHamishe bg-cover bg-center md:py-8 p-5 mb-10">
-            <TextBaner 
-                boldText={text.boldText}
-                lightText={text.lightText}/>
-        </div>
+
+        {
+            response && (
+                <div className="bg-bgHamishe bg-cover bg-center md:py-8 p-5 mb-10">
+                    <TextBaner 
+                        boldText={response[3].BoldText}
+                        lightText={response[3].LightText}/>
+                </div>
+            
+            ) 
+        }
     </>
   )
 }
