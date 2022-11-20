@@ -8,7 +8,9 @@ import logo from '../assets/images/logo.png';
 const Section07 = () => {
   return (
     <div>
-        <div className="div-cliped bg-[#2D2D2D] text-gray-100 p-5 w-full mb-2">
+        <div 
+            className="div-cliped bg-[#2D2D2D] text-gray-100 p-5 w-full mb-2"
+            data-aos="flip-up" data-aos-easing="linear" data-aos-duration="1000">
             <div className="md:w-3/4 m-auto md:mt-5">
                 <h3 className="text-start text-2xl font-bold pt-10 md:text-4xl md:font-semibold">دریافت نسخه آزمایشی</h3>
                 <p className="text-start my-5 text-sm font-extralight md:text-sm md:font-light">برای استفاده از نسخه آزمایشی پس از ثبت درخواست و دریافت شناسه کاربری وارد سامانه شوید</p>

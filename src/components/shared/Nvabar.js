@@ -34,7 +34,7 @@ const Nvabar = () => {
   return (
     <div>
 
-      <div className="flex md:items-start md:justify-start items-start justify-between w-[90%] m-auto md:py-2 overflow-hidden bg-[rgba(53,53,53,0.20)]">
+      <div className="flex md:items-start md:justify-start items-start justify-between w-[90%] m-auto md:py-2 overflow-hidden">
         <img 
             src={logo} 
             alt="graph-logo"

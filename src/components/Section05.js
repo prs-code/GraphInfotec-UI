@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 //icons
 import { FiChevronLeft } from 'react-icons/fi';
 import { GiProcessor } from 'react-icons/gi';
@@ -19,7 +19,9 @@ const Section05 = () => {
     <>
     <div className="p-5 text-center">
         <div className="md:flex md:justify-around md:items-start md:mt-20 my-5 p-3 m-auto md:w-3/4 w-full">
-          <div className="md:w-1/2">
+          <div 
+            className="md:w-1/2"
+            data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
             <div className="text-start p-3 md:text-start md:mb-4">
               <h1 className="md:text-4xl text-xl font-extrabold md:font-semibold mb-2">مدیریت <span className="text-[#cd2122]">فرآیندها</span></h1>
               <div className="w-10 h-0.5 bg-[#cd2122]"></div>
@@ -31,14 +33,18 @@ const Section05 = () => {
               <img 
                 src={manageImg} 
                 alt="form-builer"
-                className="mb-5 md:mb-0" />
+                className="mb-5 md:mb-0"
+                data-aos="zoom-out" data-aos-easing="linear" data-aos-duration="1200"/>
             </div>
         </div>
         <div>
-        <div className="p-3 md:pl-5 md:w-full">
+        <div 
+            className="p-3 md:pl-5 md:w-full"
+            data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
                 <div className="flex justify-start items-center">
                 <GiProcessor className="w-8 h-8 md:w-12 md:h-12 text-white bg-[#cd2122] rounded-full p-1 hover:scale-75 duration-100"/>
                     <div className="md:w-full text-start">
+
                         <p className="text-base font-bold text-[#cd2122] mr-3 md:text-xl md:font-extrabold">ویژگی های ابزار مدیریت فرآیندها</p>
                         <div className="border-b-2 border-[#535353] border-dashed h-0.5 w-full mr-3 mt-2"></div>
                     </div>

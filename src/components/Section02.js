@@ -11,11 +11,15 @@ import { AiOutlineForm } from 'react-icons/ai';
 const MdSection = () => {
   return (
     <div className="text-center mb-20">
-        <div className="flex flex-col opacity-50">
+
+        <div 
+            className="flex flex-col opacity-50 text-[#808080]"
+            data-aos="fade-down" data-aos-offset="50" data-aos-easing="ease" data-aos-duration="500">
             <h1 className="p-5 md:p-0 text-3xl font-semibold">نرم افزار مدیریت فرایندهای کسب و کار گراف - BPMS</h1>
             <h1 className="text-3xl font-semibold">...</h1>
             <p >مدیریت کامل و کارآمد بر فرآیندها در سطح سازمان</p>
         </div>
+        
         <div className="flex flex-col md:flex-row justify-center md:mb-20 mb-10 shadow-underShadow">
             <div>
                 <div className="p-5 flex flex-col items-start">
@@ -78,21 +82,28 @@ const MdSection = () => {
                 </div>
             </div>
         </div>
-            <div className="flex flex-col opacity-50">
+            <div 
+                className="flex flex-col opacity-50 text-[#808080]"
+                data-aos="fade-down" data-aos-offset="50" data-aos-easing="linear" data-aos-duration="500">
                 <h1 className="text-3xl p-5 md:p-0 text-center font-semibold">BPMS چیست و کاربرد آن در سازمان یا کسب و کارها چگونه است؟</h1>
                 <h1 className="text-3xl font-black">...</h1>
                 <p className="text-sm font-semibold">نرم افزار مدیریت فرایند های کسب و کار BPMS</p>
             </div>
             <div className="flex flex-col md:flex-row justify-around items-start p-5 md:p-10">
-                <div className="md:w-1/3 w-full p-5 text-start">
+                <div 
+                    className="md:w-1/3 w-full p-5 text-start"
+                    data-aos="fade-down" data-aos-offset="50" data-aos-easing="linear" data-aos-duration="1000">
                     <h1 className="text-2xl font-extrabold">تعریف <span className="text-[#CD2122]">BPMS</span></h1>
                     <div className="h-[3px] w-[50px] bg-[#ccc] my-5"></div>
                     <h2 className="text-[#535353] md:mt-14 mt-5 text-justify leading-10">BPMS یا همان سامانه مدیریت فرایندهای کسب و کار این امکان را به شما می‌دهد تا کلیه فرایندهای جاری در سازمان یا کسب و کار خود را به همراه مکاتبات و اسناد مربوط به آن، کنار گذاشته و به اهداف مقابل دست یابید :</h2>
                 </div>
-                <div className="md:w-2/4 w-full">
+                <div 
+                    className="md:w-2/4 w-full"
+                    data-aos="fade-up" data-aos-offset="50" data-aos-easing="linear" data-aos-duration="1000">
                     <div className="flex items-start text-[#535353] mb-5">
                         <span className="text-gray-100 flex justify-center items-center w-2 h-2 px-3 py-3 md:w-5 md:h-5 md:px-6 md:py-5 mr-1 ml-2 md:ml-5 bg-[#cd2122] rounded-md">1</span>
-                        <div className="flex flex-col items-start w-11/12">
+                        <div 
+                            className="flex flex-col items-start w-11/12">
                             <h3 className="md:text-sm font-semibold text-xs text-start mb-2">بهترین و منعطف ترین روش برای مکانیزه کردن و کنترل فرایندها</h3>
                             <span className="md:w-[480px] w-full border-b-2 border-[#535353] border-dashed h-0.5"></span>
                         </div>

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 //icons
 import { TbMapSearch } from 'react-icons/tb';
@@ -68,23 +68,30 @@ const Baner02 = () => {
 
         <div className="md:flex md:justify-around md:items-start md:mt-20 my-20 p-3 m-auto md:w-3/4 w-full">
 
-          <div className="md:w-1/2">
+          <div 
+            className="md:w-1/2"
+            data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
             <div className="text-start p-3 md:text-start md:mb-4">
               <h1 className="md:text-4xl text-xl font-extrabold md:font-semibold mb-2">فرم ساز <span className="text-[#cd2122]">پیشرفته</span></h1>
               <div className="w-10 h-0.5 bg-[#cd2122]"></div>
             </div>
-            <div className="md:w-3/4 text-center w-full">
+            <div 
+              className="md:w-3/4 text-center w-full">
               <h3 className="my-10 text-base text-start md:text-lg font-semibold text-[#535353] pb-2">اطمینان از صحت اطلاعات در ساختار ایجاد شده</h3>
               <p className="text-justify leading-10 text-sm md:text-base text-[#535353] pb-4">امروزه بخش قابل توجهی از اسناد در قالب اطلاعاتی هستند. ثبت، نگهداری و بازیابی اطلاعات این فرم‌ها از اهمیت ویژه‌ای برخوردار است. راهکار فرمساز جهت پاسخگویی به این نیاز طراحی و ارائه شده است. با استفاده از ابزار  کاربر بدون دانش برنامه‌نویسی می‌تواند فرم‌ها را به راحتی در سیستم طراحی کرده و اطلاعات جمع آوری شده را تحلیل و بررسی نماید.</p>
               <img 
                 src={imageForm} 
                 alt="form-builer"
-                className="mb-5 md:mb-0" />
+                className="mb-5 md:mb-0"
+              data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="700"
+            />
             </div>
         </div>
 
 
-          <div className="p-3 md:p-5 md:w-1/2">
+          <div 
+            className="p-3 md:p-5 md:w-1/2"
+            data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
             <div className="flex justify-start items-center">
               <TfiRulerPencil className="w-10 h-10 p-1 md:w-12 md:h-12 text-white bg-[#cd2122] rounded-full md:p-2 hover:scale-75 duration-100"/>
               <div>
@@ -170,27 +177,39 @@ const Baner02 = () => {
 
         <div className="md:flex md:justify-around mb-20 flex flex-wrap justify-center items-center gap-4 text-[#535353] text-center">
 
-          <div className="flex flex-col justify-center items-center">
+          <div 
+            className="flex flex-col justify-center items-center"
+            data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="300">
               <MdOutlineAddLocationAlt className=" w-10 h-10 mb-2 text-[#cd2122]"/>
               <p className="text-xs m-5 md:m-0">فیلد تشخیص موقعیت و مسیر حرکت</p>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div 
+            className="flex flex-col justify-center items-center"
+            data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="300">
               <AiOutlineForm className=" w-10 h-10 mb-2 text-[#cd2122]"/>
               <p className="text-xs m-5 md:m-0">امکان ایجاد فرم‌های تودرتو</p>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div 
+            className="flex flex-col justify-center items-center"
+            data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="900">
               <BsClipboardData className=" w-10 h-10 mb-2 text-[#cd2122]"/>
               <p className="text-xs m-5 md:m-0">کنترل و جلوگیری از ثبت داده تکراری</p>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div 
+            className="flex flex-col justify-center items-center"
+            data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="1200">
               <MdOutlineDashboardCustomize className=" w-10 h-10 mb-2 text-[#cd2122]"/>
               <p className="text-xs m-5 md:m-0">انواع فیلدهای اطلاعاتی پیشرفته</p>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div 
+            className="flex flex-col justify-center items-center"
+            data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="1500">
               <BiNetworkChart className=" w-10 h-10 mb-2 text-[#cd2122]"/>
               <p className="text-xs m-5 md:m-0">ایجاد وب‌سرویس‌های ارتباطی متناظر با فرم</p>
           </div>
-          <div className="flex flex-col justify-center items-center">
+          <div 
+            className="flex flex-col justify-center items-center"
+            data-aos="fade-down-left" data-aos-easing="linear" data-aos-duration="1800">
               <SiAppstore className=" w-10 h-10 mb-2 text-[#cd2122]"/>
               <p className="text-xs m-5 md:m-0">قابلیت ارسال به نرم افزار همراه</p>
           </div>

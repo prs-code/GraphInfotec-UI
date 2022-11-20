@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 //icons
 import { FiChevronLeft } from 'react-icons/fi';
 import { MdOutlineDashboard } from 'react-icons/md';
@@ -139,9 +139,15 @@ const Section06 = () => {
 
     <div className="text-center md:w-3/5 md:m-auto">
       <div className="text-start p-3 md:text-start md:mb-4">
-        <h1 className="md:text-4xl text-xl font-extrabold md:font-semibold mb-2">مدیریت <span className="text-[#cd2122]">بانک ها و سرویس های</span> اطلاعاتی</h1>
+        <h1 
+            className="md:text-4xl text-xl font-extrabold md:font-semibold mb-2"
+            data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
+            مدیریت <span className="text-[#cd2122]">بانک ها و سرویس های</span> اطلاعاتی</h1>
         <div className="w-10 h-0.5 bg-[#ccc] mt-4"></div>
-        <p className="text-justify leading-10 md:leading-normal md:text-base md:mt-10 text-sm text-[#535353] pb-4">در هسته اصلی BPMS گراف این ویژگی دیده شده است تا براحتی با انواع بانک های اطلاعاتی در سرورهای مختلف ارتباط گرفته و نتایج مورد نظر را در قالب لیست داده، گزارش، نمودار و داشبورد در اختیار شمار قرار دهد. دسترسی آنلاین به منابع اطلاعات و امکان مقایسه، کنترل و پردازش و استعلام داده ها ابزاری کارآمد بمنظور تحلیل و مطالعه داده در اختیار شما قرار خواهد داد. همچنین در صورت لزوم دسترسی به این منابع اطلاعاتی در طراحی فرم ها و فرآیندها نیز ممکن می باشد.</p>
+        <p 
+            className="text-justify leading-10 md:leading-normal md:text-base md:mt-10 text-sm text-[#535353] pb-4"
+            data-aos="fade-left" data-aos-easing="linear" data-aos-duration="1000">
+            در هسته اصلی BPMS گراف این ویژگی دیده شده است تا براحتی با انواع بانک های اطلاعاتی در سرورهای مختلف ارتباط گرفته و نتایج مورد نظر را در قالب لیست داده، گزارش، نمودار و داشبورد در اختیار شمار قرار دهد. دسترسی آنلاین به منابع اطلاعات و امکان مقایسه، کنترل و پردازش و استعلام داده ها ابزاری کارآمد بمنظور تحلیل و مطالعه داده در اختیار شما قرار خواهد داد. همچنین در صورت لزوم دسترسی به این منابع اطلاعاتی در طراحی فرم ها و فرآیندها نیز ممکن می باشد.</p>
       </div>
       <div className="text-start p-3 md:text-start md:mb-5 md:flex md:justify-around md:items-start">
         <h3 className="my-2 md:my-5 text-base text-justify md:w-1/2 md:ml-20 md:text-lg font-semibold text-[#535353] pb-2">اگر در سازمان یا کسب و کار شما از سامانه‌ها و نرم‌افزارهای دیگر استفاده می‌شود، با استفاده از سامانه مدیریت کسب و کار گراف می‌توانید مدیریت خود را یکپارچه کرده و کماکان از مزایای نرم‌افزارها و سامانه‌های دیگر خود بهره ببرید</h3>
