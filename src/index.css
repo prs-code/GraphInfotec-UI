@@ -11,7 +11,8 @@
 
 @layer base {
     html {
-        font-family: "IRANSansWeb"
+        font-family: "IRANSansWeb";
+        scroll-behavior: smooth;
     }
 }
 

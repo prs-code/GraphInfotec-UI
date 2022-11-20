@@ -8,10 +8,13 @@ import Section05 from "./Section05";
 import Section06 from "./Section06";
 import Section07 from "./Section07";
 import TopMove from '../components/shared/MoveTop';
-
+//AOS
+import AOS from 'aos';
+import 'aos/dist/aos.css'
 //context
 import { ContextProvider } from '../context/ContextProvider';
 
+AOS.init();
 
 
 const Main = () => {

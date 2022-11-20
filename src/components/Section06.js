@@ -9,9 +9,9 @@ import TextBaner from './shared/TextBaner';
 //context
 import { useStateContext } from '../context/ContextProvider';
 
+
 const Section06 = () => {
     const { response } = useStateContext();
-
 
   return (
     <>

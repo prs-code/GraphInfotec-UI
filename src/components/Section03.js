@@ -37,13 +37,21 @@ const Baner02 = () => {
           />
         </video>
         <div className="bg-[rgba(53,53,53,0.65)] text-white md:w-1/2 md:p-24 p-5">
-          <h2 className="md:text-2xl font-semibold mb-12">تجمیع و تحلیل اطلاعات و رصد آنلاین جریان داده در سطح کلان</h2>
-          <p className="text-sm">با بکارگیری سامانه گراف زیرساختی امن و کارآمد جهت جمع آوری ساختار یافته اطلاعات و تحلیل و بررسی آن ایجاد نمایید.</p>
+          <h2
+            data-aos="zoom-in" data-aos-offset="50" data-aos-easing="linear" data-aos-duration="800" 
+            className="md:text-2xl font-semibold mb-12">تجمیع و تحلیل اطلاعات و رصد آنلاین جریان داده در سطح کلان</h2>
+          <p
+            data-aos="zoom-in" data-aos-offset="50" data-aos-easing="linear" data-aos-duration="800" 
+            className="text-sm">با بکارگیری سامانه گراف زیرساختی امن و کارآمد جهت جمع آوری ساختار یافته اطلاعات و تحلیل و بررسی آن ایجاد نمایید.</p>
         </div>
         <div className="bg-[rgba(220,38,38,0.50)] backdrop-blur text-white md:w-1/2 md:p-20 p-5">
           <TbMapSearch  className="md:text-6xl md:font-light text-4xl"/>
-          <h2 className="md:text-2xl font-semibold mb-14 text-end">مدیریت کامل و کارآمد بر گردش کار در سطح کلان</h2>
-          <p className="text-sm">فرایند های اختصاصی خود را با هر درجه پیچیدگی، به راحتی پیاده سازی کرده و سامانه ای کاملا سفارشی و مطابق با نیازتان ایجاد نمایید.</p>
+          <h2
+            data-aos="zoom-in" data-aos-offset="50" data-aos-easing="linear" data-aos-duration="800" 
+            className="md:text-2xl font-semibold mb-14 text-end">مدیریت کامل و کارآمد بر گردش کار در سطح کلان</h2>
+          <p
+            data-aos="zoom-in" data-aos-offset="50" data-aos-easing="linear" data-aos-duration="800" 
+            className="text-sm">فرایند های اختصاصی خود را با هر درجه پیچیدگی، به راحتی پیاده سازی کرده و سامانه ای کاملا سفارشی و مطابق با نیازتان ایجاد نمایید.</p>
         </div>
       </div>
 
