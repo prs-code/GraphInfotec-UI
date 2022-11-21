@@ -127,7 +127,7 @@ const Baner03 = () => {
 
         {
             response && (
-                <div className="bg-bgHamishe bg-cover bg-center md:py-8 p-5 mb-10">
+                <div className="bg-bgHamishe bg-cover bg-fixed bg-center md:py-8 p-5 mb-10">
                     <TextBaner 
                         boldText={response[3].BoldText}
                         lightText={response[3].LightText}/>

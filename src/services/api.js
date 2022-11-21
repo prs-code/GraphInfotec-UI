@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const BASE_URL = "http://localhost/servicebus/run";
+const BASE_URL = "http://192.168.100.152/servicebus/run";
 
 export const getData = async () => {
     const response = await axios.post(`${BASE_URL}/serviceGraphMousaviTask`, []);

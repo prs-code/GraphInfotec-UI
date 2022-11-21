@@ -94,7 +94,7 @@ const Section05 = () => {
 
     {
         response && (
-            <div className="backdrop-blur bg-bgGozaresh bg-cover bg-center md:py-8 p-5 mb-10 brightness-40">
+            <div className="backdrop-blur bg-bgGozaresh bg-cover bg-fixed bg-center md:py-8 p-5 mb-10 brightness-40">
                 <TextBaner 
                     boldText={response[4].BoldText}
                     lightText={response[4].LightText}/>

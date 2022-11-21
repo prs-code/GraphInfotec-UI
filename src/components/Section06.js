@@ -129,7 +129,7 @@ const Section06 = () => {
 
     {
         response &&
-    <div className="bg-bgBank bg-cover bg-center md:py-8 p-5 mb-10">
+    <div className="bg-bgBank bg-cover bg-fixed bg-center md:py-8 p-5 mb-10">
         <TextBaner 
             boldText={response[5].BoldText}
             lightText={response[5].LightText}/>

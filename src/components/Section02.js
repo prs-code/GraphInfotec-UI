@@ -14,13 +14,13 @@ const MdSection = () => {
 
         <div 
             className="flex flex-col opacity-50 text-[#808080]"
-            data-aos="fade-down" data-aos-offset="50" data-aos-easing="ease" data-aos-duration="500">
+            data-aos="fade-down" data-aos-offset="50" data-aos-easing="ease" data-aos-duration="1500">
             <h1 className="p-5 md:p-0 text-3xl font-semibold">نرم افزار مدیریت فرایندهای کسب و کار گراف - BPMS</h1>
             <h1 className="text-3xl font-semibold">...</h1>
             <p >مدیریت کامل و کارآمد بر فرآیندها در سطح سازمان</p>
         </div>
         
-        <div className="flex flex-col md:flex-row justify-center md:mb-20 mb-10 shadow-underShadow">
+        <div className="flex flex-col md:flex-wrap md:flex-row justify-center md:mb-20 mb-10 shadow-underShadow">
             <div>
                 <div className="p-5 flex flex-col items-start">
                     <div className="flex justify-start items-center md:px-10 px-5 w-full">
@@ -84,7 +84,7 @@ const MdSection = () => {
         </div>
             <div 
                 className="flex flex-col opacity-50 text-[#808080]"
-                data-aos="fade-down" data-aos-offset="50" data-aos-easing="linear" data-aos-duration="500">
+                data-aos="fade-down" data-aos-offset="50" data-aos-easing="linear" data-aos-duration="1500">
                 <h1 className="text-3xl p-5 md:p-0 text-center font-semibold">BPMS چیست و کاربرد آن در سازمان یا کسب و کارها چگونه است؟</h1>
                 <h1 className="text-3xl font-black">...</h1>
                 <p className="text-sm font-semibold">نرم افزار مدیریت فرایند های کسب و کار BPMS</p>

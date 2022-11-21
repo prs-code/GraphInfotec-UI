@@ -36,7 +36,7 @@ const Baner02 = () => {
             type="video/mp4"
           />
         </video>
-        <div className="bg-[rgba(53,53,53,0.65)] text-white md:w-1/2 md:p-24 p-5">
+        <div className="bg-[rgba(53,53,53,0.60)] text-white md:w-1/2 md:p-24 p-5 h-[400px]">
           <h2
             data-aos="zoom-in" data-aos-offset="50" data-aos-easing="linear" data-aos-duration="800" 
             className="md:text-2xl font-semibold mb-12">تجمیع و تحلیل اطلاعات و رصد آنلاین جریان داده در سطح کلان</h2>
@@ -44,7 +44,7 @@ const Baner02 = () => {
             data-aos="zoom-in" data-aos-offset="50" data-aos-easing="linear" data-aos-duration="800" 
             className="text-sm">با بکارگیری سامانه گراف زیرساختی امن و کارآمد جهت جمع آوری ساختار یافته اطلاعات و تحلیل و بررسی آن ایجاد نمایید.</p>
         </div>
-        <div className="bg-[rgba(220,38,38,0.50)] backdrop-blur text-white md:w-1/2 md:p-20 p-5">
+        <div className="bg-[rgba(220,38,38,0.50)] backdrop-blur text-white md:w-1/2 md:p-20 p-5 h-[400px]">
           <TbMapSearch  className="md:text-6xl md:font-light text-4xl"/>
           <h2
             data-aos="zoom-in" data-aos-offset="50" data-aos-easing="linear" data-aos-duration="800" 
@@ -218,7 +218,7 @@ const Baner02 = () => {
         
         {
           response && (
-            <div className="bg-bgMeidani bg-cover bg-no-repeat bg-center md:py-8 p-5 mb-10">
+            <div className="bg-bgMeidani bg-cover bg-no-repeat bg-fixed bg-center md:py-8 p-5 mb-10">
               <TextBaner
                   boldText={response[1].BoldText}
                   lightText={response[1].LightText} />
