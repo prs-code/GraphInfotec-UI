@@ -38,7 +38,8 @@ const Nvabar = () => {
         <img 
             src={logo} 
             alt="graph-logo"
-            className={`p-1 md:w-16 md:h-16 w-12 h-12 ${!activeMenu ? "mt-4" : "mt-2"} rounded-lg cursor-pointer`} />
+            className={`p-1 md:w-16 md:h-16 w-12 h-12 ${!activeMenu ? "mt-4" : "mt-2"} rounded-lg cursor-pointer`} 
+        />
 
 
             {

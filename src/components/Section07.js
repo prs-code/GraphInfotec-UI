@@ -22,7 +22,7 @@ const Section07 = () => {
             </div>
         </div>
 
-        <div>
+        {/* <div>
             <h1 className="md:text-2xl md:font-extrabold text-base font-bold text-center mb-5 text-[#535353]">اخبار و اطلاعیه ها</h1>
             <div className="md:flex md:justify-center md:m-auto md:h-content mb-10">
                 <div className="relative p-5 md:w-80">
@@ -56,7 +56,7 @@ const Section07 = () => {
                     <p className="text-start mb-5 px-5 text-xs font-extralight md:text-xs md:font-thin md:text-justify">  باسلام و احترام؛ ضمن عرض تبریک، احتراما به اطلاع می رساند مجوز دانش بنیانی شرکت گسترش راهکار اندیشه فردا با شناسه ملی ۱۰۳۸۰۶۵۷۸۶۹ به مدت ۳ سال دیگر تمدید شد و با توجه به ارزیابی شرکت براساس آیین‌نامه ارزیابی شرکت‌ها و موسسات دانش‌بنیان مصوب کارگروه و بر مبنای مصوبه کارگروه، این شرکت از تیرماه</p>
                 </div>
             </div>
-        </div>
+        </div> */}
         <div className="bg-[#2D2D2D] text-gray-100 p-5 px-10 w-full">
             <div className="text-center hidden md:leading-10 md:flex md:justify-center md:w-3/m-4 md:m-auto items-center md:p-3 border-b-4 border-[#535353]">
                 <div className="md:w-1/3">

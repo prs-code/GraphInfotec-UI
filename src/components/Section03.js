@@ -31,7 +31,7 @@ const Baner02 = () => {
           muted
           className="absolute z-[-10] w-auto min-w-full min-h-full max-w-none max-h-none"
         >
-          <source 
+          <source
             src="http://graphinfotec.com/wp-content/uploads/2018/10/graph_Co.mp4"
             type="video/mp4"
           />
